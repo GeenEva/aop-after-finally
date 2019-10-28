@@ -23,9 +23,11 @@ public class AfterReturningDemoApp {
 		
 		System.out.println("\nThese are the accounts: ");
 		
-		for (Account acc: theAccounts) {
-			System.out.println("\n" + acc);
-		}
+//		for (Account acc: theAccounts) {
+//			System.out.println("\n" + acc);
+//		}
+		
+		theAccounts.forEach(System.out::print);
 		
 		context.close();
 	}
